@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for lib/fields/StringField.tsx</title>
+    <title>Code coverage report for lib/theme-default/TextWidget.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">lib/fields</a> StringField.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">lib/theme-default</a> TextWidget.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.75% </span>
+                <span class="strong">76.92% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/16</span>
+                <span class='fraction'>10/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>3/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.75% </span>
+                <span class="strong">76.92% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/16</span>
+                <span class='fraction'>10/13</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -99,32 +99,31 @@
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -135,42 +134,46 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { computed, defineComponent } from 'vue'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CommonWidgetPropsDefine } from '../types'
+import { computed, DefineComponent, defineComponent } from 'vue'
+import { withFormItem } from './FormItem'
 &nbsp;
-import { FiledPropsDefine, CommonWidgetNames } from '../types'
+const TextWidget: DefineComponent&lt;typeof CommonWidgetPropsDefine&gt; =
+  withFormItem(
+    defineComponent({
+      name: 'TextWidget',
+      props: CommonWidgetPropsDefine,
+      setup(props) {
+        const handleChange = (<span class="fstat-no" title="function not covered" >e: any) =&gt; </span>{
+          const value = <span class="cstat-no" title="statement not covered" >e.target.value</span>
+<span class="cstat-no" title="statement not covered" >          e.</span>target.value = props.value || ''
+<span class="cstat-no" title="statement not covered" >          props.</span>onChange(value)
+        }
 &nbsp;
-import { getWidget } from '../theme'
+        const styleRef = computed(() =&gt; {
+          return {
+            color: (props.options &amp;&amp; props.options.color) || 'black',
+          }
+        })
 &nbsp;
-export default defineComponent({
-  name: 'StringFeild',
-  props: FiledPropsDefine,
-  setup(props) {
-    const handleChange = (<span class="fstat-no" title="function not covered" >v: string) =&gt; </span>{
-<span class="cstat-no" title="statement not covered" >      props.</span>onChange(v)
-    }
-    const TextWidgetRef = computed(() =&gt; {
-      const widgetRef = getWidget(CommonWidgetNames.TextWidget, props)
-      return widgetRef.value
-    })
-    const widgetOptionsRef = computed(() =&gt; {
-      const { widget, properties, items, ...rest } = props.uiSchema // eslint-disable-line
-      return rest
-    })
-    return () =&gt; {
-      const { rootSchema, errorSchema, ...rest } = props // eslint-disable-line
+        return () =&gt; {
+          return (
+            &lt;input
+              type="text"
+              value={props.value as any}
+              onInput={handleChange}
+              style={styleRef.value}
+            /&gt;
+          )
+        }
+      },
+    }),
+  )
 &nbsp;
-      const TextWidget = TextWidgetRef.value
-      return (
-        &lt;TextWidget
-          {...rest}
-          errors={errorSchema.__errors}
-          onChange={handleChange}
-          options={widgetOptionsRef.value}
-        /&gt;
-      )
-    }
-  },
-})
+export default TextWidget
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
