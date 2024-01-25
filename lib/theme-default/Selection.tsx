@@ -1,6 +1,6 @@
 import { DefineComponent, defineComponent, ref, watch, watchEffect } from 'vue'
 
-import { SelectionWidgetPropsDefine } from '../types'
+import { SelectionWidgetPropsDefine } from '../../types/types'
 import { withFormItem } from './FormItem'
 
 const Selection: DefineComponent<typeof SelectionWidgetPropsDefine> =

@@ -1,6 +1,6 @@
-import { CommonWidgetNames, FiledPropsDefine } from '../types'
+import { CommonWidgetNames, FiledPropsDefine } from '../../types/types'
 import { defineComponent } from 'vue'
-import { getWidget } from '../theme'
+import { getWidget } from '../core/theme'
 
 export default defineComponent({
   name: 'NumberFeild',

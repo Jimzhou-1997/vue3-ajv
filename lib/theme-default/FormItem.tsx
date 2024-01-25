@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { CommonWidgetPropsDefine } from '../types'
+import { CommonWidgetPropsDefine } from '../../types/types'
 
 import { createUseStyles } from 'vue-jss'
 

@@ -1,7 +1,7 @@
-import { FiledPropsDefine } from '../types'
+import { FiledPropsDefine } from '../../types/types'
 import { defineComponent } from 'vue'
-import { useVJSFContext } from '../context'
-import { isObject } from '../utils'
+import { useVJSFContext } from '../utils/context'
+import { isObject } from '../utils/utils'
 
 export default defineComponent({
   name: 'ObjectField',

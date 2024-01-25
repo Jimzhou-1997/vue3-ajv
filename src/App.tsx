@@ -5,7 +5,7 @@ import MonacoEditor from './components/MonacoEditor'
 
 import demos from './demos'
 
-import SchemaForm, { ThemeProvider } from '../lib'
+import SchemaForm, { ThemeProvider } from '../lib/core'
 import themeDefault from '../lib/theme-default'
 
 import customFormat from './plugins/customFormat'

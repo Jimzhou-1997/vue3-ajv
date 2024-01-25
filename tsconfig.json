@@ -13,7 +13,7 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": ["webpack-env", "jest"],
+    "types": ["webpack-env", "jest", "node"],
     "paths": {
       "@/*": ["src/*"]
     },
@@ -27,6 +27,6 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "types/types.ts"  ],
   "exclude": ["node_modules"]
 }

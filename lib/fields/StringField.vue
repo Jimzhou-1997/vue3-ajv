@@ -4,7 +4,7 @@
 
 <script lang="ts" setup="props">
 import { defineProps } from 'vue'
-import { Schema } from '../types'
+import { Schema } from '../../types/types'
 const props = defineProps<{
   value: any
   onChange: (v: string) => void

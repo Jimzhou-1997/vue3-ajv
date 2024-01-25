@@ -1,8 +1,8 @@
 import { computed, defineComponent } from 'vue'
 
-import { FiledPropsDefine, CommonWidgetNames } from '../types'
+import { FiledPropsDefine, CommonWidgetNames } from '../../types/types'
 
-import { getWidget } from '../theme'
+import { getWidget } from '@schema-form-new/core/theme'
 
 export default defineComponent({
   name: 'StringFeild',

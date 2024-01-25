@@ -1,4 +1,4 @@
-import { CommonWidgetPropsDefine } from '../types'
+import { CommonWidgetPropsDefine } from '../../types/types'
 import { computed, DefineComponent, defineComponent } from 'vue'
 import { withFormItem } from './FormItem'
 

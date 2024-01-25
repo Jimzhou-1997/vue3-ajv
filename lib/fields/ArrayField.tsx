@@ -1,8 +1,12 @@
 import { defineComponent, PropType } from 'vue'
 import { createUseStyles } from 'vue-jss'
-import { useVJSFContext } from '../context'
-import { FiledPropsDefine, Schema, SelectionWidgetNames } from '../types'
-import { getWidget } from '../theme'
+import { useVJSFContext } from '../utils/context'
+import {
+  FiledPropsDefine,
+  Schema,
+  SelectionWidgetNames,
+} from '../../types/types'
+import { getWidget } from '../core/theme'
 // import SelectionWidget from '../widgets/Selection'
 
 const useStyles = createUseStyles({

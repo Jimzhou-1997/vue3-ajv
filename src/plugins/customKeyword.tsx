@@ -1,4 +1,4 @@
-import { CustomKeyword } from '../../lib/types'
+import { CustomKeyword } from '../../types/types'
 
 const keyword: CustomKeyword = {
   name: 'test',

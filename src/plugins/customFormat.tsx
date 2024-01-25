@@ -1,6 +1,6 @@
 import { computed, defineComponent } from 'vue'
 import { withFormItem } from '../../lib/theme-default/FormItem'
-import { CommonWidgetPropsDefine, CustomFormat } from '../../lib/types'
+import { CommonWidgetPropsDefine, CustomFormat } from '../../types/types'
 
 const format: CustomFormat = {
   name: 'color',
